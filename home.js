@@ -78,3 +78,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
 });
 
+//student resourse
+function showInfo(resource) {
+    alert(resource + " section clicked!");
+}
+
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username === "student" && password === "1234") {
+        alert("Login Successful!");
+    } else {
+        alert("Invalid Username or Password!");
+    }
+}
