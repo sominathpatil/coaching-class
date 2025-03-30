@@ -27,7 +27,7 @@
                 <li><a href="#contact">Contact Us</a></li>
                 <li><a href="#more">More ▼</a>
                     <ul class="dropdown">
-                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="admision.html">Admissions</a></li>
                         <li><a href="#resources">Student Resources</a></li>
                         <li><a href="#blog">Blog/News</a></li>
                         <li><a href="#events">Events</a></li>
@@ -178,6 +178,87 @@
             </div>       
         </div>
     </section>
-   
+    <section id="resources">
+        <div class="student-container">
+            <h2 class="student-h2">Student Resources</h2>
+            <div class="resources">
+                <div class="resource-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3081/3081648.png" alt="Study Materials">
+                    <h3 class="student-h3">Study Materials</h3>
+                    <p class="student-p">Access notes, e-books, and recorded lectures</p>
+                    <button onclick="showInfo('Study Materials')">Explore</button>
+                </div>
+                <div class="resource-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/679/679744.png" alt="Online Classes">
+                    <h3 class="student-h3">Online Classes</h3>
+                    <p class="student-p">Join live or recorded online <br> sessions    </p>
+                    <button onclick="showInfo('Online Classes')">Join Now</button>
+                </div>
+                <div class="resource-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2972/2972012.png" alt="Timetable">
+                    <h3 class="student-h3">Timetable</h3>
+                    <p class="student-p">Check updated class and exam schedules</p>
+                    <button onclick="showInfo('Timetable')">View Schedule</button>
+                </div>
+            </div>
+            <!-- Login Section -->
+            <div class="login-box">
+                <h3 class=""student-h3">Student Login</h3>
+                <input type="text" id="username" placeholder="Enter UserName">
+                <input type="password" id="password" placeholder="Enter Password">
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+
+    </section>
+    <section id="">
+        <section id="contact">
+            <div class="contact-container">
+                <h2 class="contact">Contact Us</h2>
+                <img src="Map.png" alt="Contact Image" class="contact-map">
+                <div class="fw-container">
+                    <div class="fw-box">
+                        <h3 class="contact-h3">Office</h3>
+                        <p class="contact-p">cidco Chhatrapati Sambhajinagar</p>
+                    </div>
+                    <div class="fw-box">
+                        <h3 class="contact-h3">Call Us</h3>
+                        <p class="contact-p">+91 9876543210</p>
+                    </div>
+                    <div class="fw-box">
+                        <h3 class="contact-h3">Email</h3>
+                        <p class="contact-p">xyz@example.com</p>
+                    </div>
+                    <div class="fw-box">
+                        <h3 class="contact-h3">Timing</h3>
+                        <p class="contact-p">Mon-Sat <br> 10:00AM - 4:00AM</p>
+                    </div>
+                </div>
+                <h3 class="contact-form-heading">Contact Form</h3>
+                
+                <form class="contact-form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-bt">Submit</button>
+                </form>
+        
+                <!-- Social Media Links -->
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+    </section>
 </body>
 </html>
