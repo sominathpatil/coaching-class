@@ -1,0 +1,579 @@
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px; /* Adds spacing on the left and right */
+    background-color: #004080;
+    color: white;
+    height: 50px;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+/* Add padding to body so content doesn't go under header */
+body {
+    padding-top: 50px; /* Adjust to match header height */
+}
+
+
+/* Logo - Align Left */
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    height: 110px;
+    margin : 3px 0px 0px 20px;
+}
+
+/* Menu Toggle Button*/
+.menu-toggle {
+    margin: 5px;
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+     /* Push the button to the right */
+}
+
+/* Navigation - Align Right */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Move menu to the right */
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;text-align: center;
+   
+}
+nav ul li a:hover {
+    border: 1px solid orange;
+    color: black;
+    background-color: orange;
+    border-radius: 15px;
+    
+  
+}
+
+/* Dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #004080;
+    list-style: none;
+    padding: 0;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown li a {
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown li a:hover {
+    background-color: #0066cc;
+}
+
+/* Show Dropdown */
+.dropdown.show {
+    display: block;
+}
+.name {
+    width: 100%;
+    background-color: white; /* Background color */
+    padding: 15px 0; /* Add padding */
+    text-align: center;
+    font-family: algerian;
+}
+
+.name marquee {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    text-transform: uppercase;
+    margin-top: 75px;
+}
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Slides Wrapper */
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Individual Slide */
+.slide {
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 46px 0px 10px;
+    background: lightseagreen;
+    color: white;
+    position: relative;
+}
+
+/* Left Text Content */
+.content {
+    flex: 1;
+    padding: 0px 10px 0px 50px;
+    max-width: 50%;
+    z-index: 2;
+}
+
+.content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.highlight {
+    color: #ffd700;
+}
+
+.content p {
+    font-size: 28px;
+    text-align: center;
+}
+
+.cta-btn {
+    background-color: white;
+    color: #002d80;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin: 20px 75px;
+}
+
+.cta-btn:hover {
+    background-color: #ffd700;
+}
+
+/* Right Image Content */
+.image {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.image img {
+    padding: 10px;
+    width: 550px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: none;
+    padding: 10px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    background: none;
+}
+
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+/* About page css */
+#about {
+    scroll-margin-top: 80px; /* Adjust this based on your header height */
+}
+
+
+
+.container {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Section Styling */
+.section {
+    font-size: 15px;
+    padding: 2px;
+    margin: 1px 0;
+    /* border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+    min-height: 450px; /* Changed from height to min-height for flexibility */
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom : 40px;
+}
+.paragraph{
+    padding: 0px 30px;
+}
+.section h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Image Styling */
+.section img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 15px;
+    height: auto;
+    width: 600px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center team members */
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    background-color: rgb(250, 238, 238);
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+/* Ensuring Images Are Well-Styled */
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 0;
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: white;
+}
+/* course style */
+/* Container */
+.course-container {
+    display: grid;
+    justify-content: center;
+    width: 90%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Heading */
+.all-courses{
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 1px;
+}
+
+/* Link Styles */
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+
+/* Courses Section */
+.courses {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    margin-top: 40px;
+}
+
+/* Course Card */
+.course-card {
+    background-color: rgb(250, 238, 238);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* 4 cards per row */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Align content properly */
+    justify-content: space-between; /* Align text & button at the bottom */
+    min-height: 350px; /* Ensures uniform height */
+}
+
+/* Image Styling */
+.course-card img {
+    width: 100%;  
+    height: 150px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    display: block;
+}
+
+/* Course Title */
+.course-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Course Description */
+.course-card p {
+    flex-grow: 1; /* Push button to the bottom */
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/* Button Styling */
+.course-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.course-card button:hover {
+    background-color: orange;
+    color: black;
+}
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+    .menu-toggle:hover{
+        color: yellow;
+        border: 1px solid yellow;
+    }
+    .nav {
+        font-size: 12px;
+        position: absolute;
+        top: 69px;
+        right: 1px; /* Changed from left to right */
+        padding: 0 10px 10px 10px;
+        width: 200px;
+        background-color: #004080;;
+        display: none;
+        z-index: 1000;
+        height: auto; /* Keeps the menu height fixed */
+        overflow-y: auto;
+        /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2); */
+    }
+    .nav.show {
+        display: block;
+        right: 5px; /* Changed from left to right */
+        text-align: center;
+    }
+    .logo img {
+        margin: -10px;
+    }
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav ul li a {
+        margin: -10px;
+        width: 100%;
+    }
+    .nav ul li a:hover {
+        border: 1px solid orange;
+        color: black;
+        background-color: orange;
+        border-radius: 15px;
+    }
+    .dropdown {
+        position: relative;
+        width: 10px;
+        background-color: #004080;
+    }
+    .dropdown.show {
+        display: block;
+        height: auto;
+    }
+    .slider-container {
+        height: auto; /* Allow height to adjust dynamically */
+        min-height: 600px; /* Ensure enough space */
+    }
+    /* Stack Content & Image Vertically */
+    .slide {
+        flex-direction: column;
+        text-align: center;
+        padding: 4px;
+        height: auto; /* Make each slide adjust to content */
+        min-height: 600px; /* Increase minimum height */
+    }
+    /* Adjust Text Content */
+    .content {
+        max-width: 100%;
+        padding: 5px 0px 0px 0px;
+    }
+    .content h2 {
+        font-size: 25px;
+    }
+    .content p {
+        font-size: 18px;
+    }
+    .cta-btn {
+        font-size: 18px;
+        padding: 14px 30px;
+    }
+    /* Adjust Image Size for Mobile */
+    .image {
+        max-width: 100%;
+        text-align: center;
+        margin-top: -150px;
+    }
+    .image img {
+        width: 95%;
+        height: auto;
+        max-height: 350px; /* Increase image height */
+        object-fit: contain;
+    }
+    /* Resize Navigation Buttons */
+    .prev-btn, .next-btn {
+        font-size: 15px;
+        padding: 12px 18px;
+        top: 50%;
+        background: none;
+    }
+    .prev-btn {
+        left: 15px;
+    }
+    .next-btn {
+        right: 15px;
+    }
+    .team-member {
+       padding :0px;
+    }
+    .container{
+        margin: -30px auto;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    .section {
+        font-size: 12px;
+        min-width: 50px;
+        margin: -35px 0;
+    }
+    .section h2 {
+        font-size: 18px;
+    }
+    .section img {
+        width: 80%;
+    }
+    /* course css */
+    .course-container{
+        margin: 15px auto;
+    }
+    .course-card {
+        width: calc(50% - 15px); /* 2 cards per row */
+        padding: 10px; /* Reduce padding */
+        min-height: 100px; /* Reduce height */
+        font-size: 14px; /* Decrease text size */
+    }
+
+    .course-card img {
+        height: 60px; /* Smaller images */
+    }
+
+    .course-card h3 {
+        font-size: 12px; /* Reduce heading size */
+    }
+
+    .course-card p {
+        font-size: 10px; /* Reduce paragraph text */
+    }
+
+    .course-card button {
+        padding: 8px 16px; /* Smaller button */
+        font-size: 10px;
+    }
+    .all-courses{
+        font-size: 25px;
+        color: #333;
+        margin-bottom: -20px;
+    }
+}
