@@ -93,3 +93,16 @@ function login() {
         alert("Invalid Username or Password!");
     }
 }
+// FAQ js
+function toggleAnswer(index) {
+    let answers = document.querySelectorAll(".faq-answer");
+    let questions = document.querySelectorAll(".faq-question span");
+
+    if (answers[index].style.display === "block") {
+        answers[index].style.display = "none";
+        questions[index].textContent = "+";
+    } else {
+        answers[index].style.display = "block";
+        questions[index].textContent = "-";
+    }
+}
