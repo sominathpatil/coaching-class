@@ -296,7 +296,7 @@ h1 {
 
 .team-member {
     text-align: center;
-    background-color: rgb(250, 238, 238);
+    background-color: rgb(245 220 220);
     padding: 60px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -368,7 +368,7 @@ a {
 
 /* Course Card */
 .course-card {
-    background-color: rgb(250, 238, 238);
+    background-color: rgb(245 220 220);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -450,7 +450,8 @@ a {
 
 .resource-box {
     width: 200px;
-    background-color: rgb(250, 238, 238);
+    background-color:rgb(245 220 220);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -493,10 +494,10 @@ a {
 /* Smaller Login Box */
 .login-box {
     margin-top: 35px;
-    background-color: rgb(250, 238, 238);
+    background-color: rgb(245 220 220);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 400px;
     margin-left: auto;
@@ -556,6 +557,7 @@ a {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .contact-h3{
     background-color: #f0f0f0; /* Light grey background */
@@ -581,7 +583,8 @@ a {
     margin-right: auto;
 }
 .fw-box {
-    background-color: rgb(250, 238, 238);
+    background-color: rgb(245 220 220);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 12px;
     border-radius: 6px;
     text-align: center;
@@ -654,13 +657,17 @@ textarea {
 .contact-bt:hover {
     background: #0056b3;
 }
-
+.contact-fu{
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
 ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 15px;
+    padding: 1px;
 }
 
 ul li {
@@ -677,7 +684,53 @@ ul li a {
 ul li a:hover {
     color: black;
 }
-
+/* FAQ css */
+#contact{
+    scroll-margin-top: 50px; /* Adjust this based on your header height */
+}
+.faq-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 1px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}   
+.faq-h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+.faq-item {
+    border: 1px solid #4CAF50;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+.faq-item:hover {
+    background-color: #f1f8f1;
+}
+.faq-question {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #e8f5e9;
+    margin-top: 5px;
+    border-radius: 5px;
+}
 
 
 
@@ -809,7 +862,7 @@ ul li a:hover {
     }
     /* course css */
     .course-container{
-        margin: 15px auto;
+        margin: 35px auto;
     }
     .course-card {
         width: calc(50% - 15px); /* 2 cards per row */
@@ -884,6 +937,10 @@ ul li a:hover {
         grid-template-columns: repeat(2, 1fr); /* 2 columns in a row */
         gap: 10px;
     }
+    /* contact css */
+    .contact{
+        font-size: 15px;
+    }
     .contact-map{
         width: 315px;
     }
@@ -891,10 +948,40 @@ ul li a:hover {
         width: 85%;
         padding: 15px 25px;
     }
+    .contact-form-heading{
+        font-size: 15px;
+    }
     .contact-h3 {
         font-size: 10px;
     }
     .fw-box{
         font-size: 10px;
+    }
+    .contact-fu{
+        font-size: 13px;
+    }
+    ul li a{
+        font-size: 10px;
+    }
+    /* FAQ */
+    .faq-container {
+        width: 300px;
+        padding: 1px;
+    }
+    .faq-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+    .faq-item {
+        padding: 0px 20px;
+    }
+    
+    .faq-question{
+        font-size: 12px;
+    }
+    .faq-answer{
+        font-size: 10px;
+    }
+    .faq-h1{
+        font-size: 15px;
     }
 }
